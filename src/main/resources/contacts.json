@@ -1,0 +1,62 @@
+[
+	{
+		"lastName": "Andreev",
+		"firstName": "Ivan",
+		"age": "25",
+		"education": "MAI"
+	},
+	{
+		"lastName": "Ivanov",
+		"firstName": "Roman",
+		"age": "32",
+		"education": "MFTI"
+	},
+	{
+		"lastName": "Romanov",
+		"firstName": "Konstantin",
+		"age": "32",
+		"education": "MGU"
+	},
+	{
+		"lastName": "Alieva",
+		"firstName": "Sofiya",
+		"age": "27",
+		"education": "MAI"
+	},
+	{
+		"lastName": "Korneeva",
+		"firstName": "Anna",
+		"age": "29",
+		"education": "SPBGU"
+	},
+	{
+		"lastName": "Chernenko",
+		"firstName": "Valentin",
+		"age": "44",
+		"education": "MGU"
+	},
+	{
+		"lastName": "Alieva",
+		"firstName": "Kammila",
+		"age": "25",
+		"education": "MFTI"
+	},
+	{
+		"lastName": "Andrade",
+		"firstName": "Usman",
+		"age": "28",
+		"education": "MAI"
+	},
+	{
+		"lastName": "Fidel",
+		"firstName": "Kastro",
+		"age": "33",
+		"education": "UH"
+	},
+	{
+		"lastName": "Romanov",
+		"firstName": "Egor",
+		"age": "23",
+		"education": "MFTI"
+	}
+]

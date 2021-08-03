@@ -1,0 +1,86 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://smsoft.ru/non-rookie/soap"
+           targetNamespace="http://smsoft.ru/non-rookie/soap" elementFormDefault="qualified">
+
+    <xs:element name="getByLastNameRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="LastName" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getByLastNameResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contacts" type="tns:contact" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getByFirstNameAndLastNameRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="LastName" type="xs:string"/>
+                <xs:element name="FirstName" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getByFirstNameAndLastNameResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contacts" type="tns:contact" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getByEducationRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Education" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getByEducationResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contacts" type="tns:contact" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getByOldestOrYoungestRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Extremum" type="tns:ageExtremum"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getByOldestOrYoungestResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contact" type="tns:contact"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="contact">
+        <xs:sequence>
+            <xs:element name="LastName" type="xs:string"/>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="Age" type="xs:int"/>
+            <xs:element name="Education" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="ageExtremum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OLDEST"/>
+            <xs:enumeration value="YOUNGEST"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>
